@@ -1,0 +1,1554 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+<meta name="theme-color" content="#0f172a">
+<title>首爾 5 天 4 夜 ✈️ 7/14 - 7/18</title>
+<style>
+:root{
+  --bg:#0f172a;--bg2:#1e293b;--card:#1f2937;--card2:#273449;
+  --text:#f1f5f9;--muted:#94a3b8;--border:#334155;
+  --accent:#fb7185;--accent2:#f59e0b;--ok:#34d399;--blue:#60a5fa;
+  --gradient:linear-gradient(135deg,#fb7185,#f59e0b);
+  --shadow:0 10px 30px rgba(0,0,0,.3);
+}
+[data-theme="light"]{
+  --bg:#fff7ed;--bg2:#ffffff;--card:#ffffff;--card2:#fff1f2;
+  --text:#1e293b;--muted:#64748b;--border:#fecdd3;
+  --shadow:0 8px 24px rgba(251,113,133,.15);
+}
+*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:rgba(251,113,133,.3)}
+html{scroll-behavior:smooth;scroll-padding-top:70px;-webkit-text-size-adjust:100%}
+body{font-family:-apple-system,BlinkMacSystemFont,"Microsoft JhengHei","PingFang TC","Noto Sans TC",sans-serif;background:var(--bg);color:var(--text);line-height:1.65;overflow-x:hidden;transition:background .3s;font-size:16px}
+img{max-width:100%;display:block;border-radius:12px}
+a{color:var(--accent);text-decoration:none}
+
+/* Topbar */
+.topbar{position:sticky;top:0;z-index:100;background:rgba(15,23,42,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--border)}
+[data-theme="light"] .topbar{background:rgba(255,255,255,.92)}
+.topbar-inner{max-width:1200px;margin:0 auto;padding:10px 16px;display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.brand{font-weight:800;font-size:18px;background:var(--gradient);-webkit-background-clip:text;background-clip:text;color:transparent;white-space:nowrap}
+.nav{display:flex;gap:6px;flex:1;overflow-x:auto;scrollbar-width:none}
+.nav::-webkit-scrollbar{display:none}
+.nav a{padding:7px 12px;border-radius:999px;font-size:13px;font-weight:600;color:var(--text);background:var(--card);border:1px solid var(--border);white-space:nowrap;transition:.2s}
+.nav a:hover,.nav a.active{background:var(--gradient);color:#fff;border-color:transparent}
+.theme-btn{padding:7px 10px;border-radius:999px;background:var(--card);border:1px solid var(--border);color:var(--text);cursor:pointer;font-size:14px}
+
+/* Hero */
+.hero{padding:40px 16px 30px;text-align:center;background:radial-gradient(circle at 30% 20%,rgba(251,113,133,.18),transparent 50%),radial-gradient(circle at 70% 80%,rgba(245,158,11,.18),transparent 50%)}
+.hero h1{font-size:clamp(28px,6vw,52px);font-weight:900;line-height:1.1;margin-bottom:12px}
+.hero h1 span{background:var(--gradient);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p{color:var(--muted);font-size:clamp(14px,2.4vw,18px);margin-bottom:18px}
+.countdown{display:inline-flex;gap:8px;flex-wrap:wrap;justify-content:center}
+.cd{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:8px 14px;min-width:62px;box-shadow:var(--shadow)}
+.cd b{display:block;font-size:24px;color:var(--accent)}
+.cd span{font-size:11px;color:var(--muted)}
+
+/* Section */
+section{max-width:1200px;margin:0 auto;padding:36px 16px}
+.section-title{font-size:clamp(22px,4vw,32px);font-weight:800;margin-bottom:6px}
+.section-title .emoji{margin-right:8px}
+.section-sub{color:var(--muted);margin-bottom:20px;font-size:14px}
+
+/* Day banner */
+.day-banner{display:flex;align-items:center;gap:16px;padding:16px 20px;border-radius:18px;background:var(--gradient);color:#fff;box-shadow:var(--shadow);margin-bottom:18px;flex-wrap:wrap}
+.day-banner .num{font-size:36px;font-weight:900;line-height:1}
+.day-banner .info{flex:1;min-width:180px}
+.day-banner h2{font-size:22px;font-weight:800;margin:0}
+.day-banner p{margin:2px 0 0;font-size:13px;opacity:.95}
+
+/* Block (subsection) */
+.block{margin:20px 0 28px;padding:18px;background:var(--card);border:1px solid var(--border);border-radius:18px;box-shadow:var(--shadow)}
+.block-head{display:flex;align-items:center;gap:10px;margin-bottom:14px;flex-wrap:wrap}
+.block-head h3{font-size:18px;font-weight:800;margin:0}
+.block-head .area{font-size:12px;color:var(--muted)}
+
+/* Tags */
+.tag{display:inline-block;padding:3px 10px;border-radius:999px;font-size:11px;font-weight:700;margin-right:6px;flex-shrink:0}
+.tag-morning{background:rgba(251,191,36,.18);color:#fbbf24}
+.tag-noon{background:rgba(248,113,113,.18);color:#f87171}
+.tag-afternoon{background:rgba(96,165,250,.18);color:#60a5fa}
+.tag-evening{background:rgba(192,132,252,.18);color:#c084fc}
+.tag-late{background:rgba(45,212,191,.18);color:#2dd4bf}
+
+/* Cards */
+.grid{display:grid;gap:14px}
+.grid-2{grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+.grid-3{grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+.grid-4{grid-template-columns:repeat(auto-fit,minmax(170px,1fr))}
+.card{background:var(--card2);border:1px solid var(--border);border-radius:14px;padding:14px;display:flex;flex-direction:column;gap:8px;transition:transform .2s}
+.card:hover{transform:translateY(-3px)}
+.card img{aspect-ratio:1.3;object-fit:cover;cursor:zoom-in}
+.card .ttl{font-size:15px;font-weight:800;line-height:1.3}
+.card .meta{font-size:12px;color:var(--muted)}
+.card .desc{font-size:13px;line-height:1.5;flex:1}
+.card .actions{display:flex;flex-wrap:wrap;gap:6px;margin-top:auto}
+.btn{display:inline-flex;align-items:center;gap:4px;padding:8px 14px;border-radius:999px;font-size:13px;font-weight:700;border:1px solid var(--border);background:var(--card);color:var(--text);cursor:pointer;transition:.2s;min-height:36px;text-decoration:none}
+.btn:hover{transform:scale(1.05)}
+.btn:active{transform:scale(.95)}
+.btn-map{background:#3b82f6;color:#fff;border-color:transparent}
+.btn-route{background:#10b981;color:#fff;border-color:transparent}
+.btn-web{background:#a855f7;color:#fff;border-color:transparent}
+
+/* Type pills inside cards */
+.pill{display:inline-flex;align-items:center;gap:4px;padding:2px 8px;border-radius:6px;font-size:10px;font-weight:700}
+.pill-spot{background:rgba(96,165,250,.2);color:#60a5fa}
+.pill-food{background:rgba(248,113,113,.2);color:#f87171}
+.pill-shop{background:rgba(52,211,153,.2);color:#34d399}
+.pill-anime{background:rgba(192,132,252,.2);color:#c084fc}
+
+/* Flight */
+.flight{background:var(--gradient);color:#fff;border-radius:18px;padding:18px;box-shadow:var(--shadow)}
+.flight .row{display:flex;justify-content:space-between;align-items:center;margin-top:10px}
+.flight .city{font-size:24px;font-weight:900}
+.flight .arrow{font-size:24px}
+.flight .time{font-size:13px;opacity:.9}
+.flight .label{font-size:12px;opacity:.85;text-transform:uppercase;letter-spacing:1px}
+.info-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px}
+
+/* Map zoom thumb — 手機優先大區點擊 */
+.map-thumb{position:relative;cursor:zoom-in;border-radius:14px;overflow:hidden;border:3px solid var(--accent);box-shadow:var(--shadow);transition:.2s}
+.map-thumb:active{transform:scale(.98)}
+.map-thumb::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 60%,rgba(0,0,0,.55));pointer-events:none;z-index:1}
+.map-thumb::after{content:"👆 點擊放大 / 雙指縮放";position:absolute;bottom:12px;left:50%;transform:translateX(-50%);background:var(--gradient);color:#fff;padding:8px 16px;border-radius:999px;font-size:13px;font-weight:800;z-index:2;box-shadow:0 4px 12px rgba(0,0,0,.4);white-space:nowrap}
+.map-thumb img{transition:.3s;width:100%;display:block}
+.map-thumb:hover img{transform:scale(1.04)}
+
+/* Viewer */
+.viewer{position:fixed;inset:0;background:rgba(0,0,0,.95);z-index:1000;display:none;align-items:center;justify-content:center}
+.viewer.open{display:flex}
+.viewer-inner{position:relative;width:100%;height:100%;overflow:hidden;touch-action:none;cursor:grab}
+.viewer-inner.grabbing{cursor:grabbing}
+.viewer-img{position:absolute;left:50%;top:50%;transform-origin:0 0;user-select:none;pointer-events:none;max-width:none}
+.viewer-close{position:absolute;top:14px;right:14px;width:42px;height:42px;border-radius:50%;background:#fff;border:0;font-size:22px;cursor:pointer;z-index:2}
+.viewer-tools{position:absolute;bottom:20px;left:50%;transform:translateX(-50%);display:flex;gap:8px;background:rgba(0,0,0,.7);padding:8px;border-radius:999px;z-index:2}
+.viewer-tools button{width:42px;height:42px;border-radius:50%;border:0;background:#fff;font-size:18px;font-weight:700;cursor:pointer}
+.viewer-title{position:absolute;top:14px;left:14px;color:#fff;background:rgba(0,0,0,.7);padding:8px 16px;border-radius:999px;font-weight:600;z-index:2;max-width:60%;font-size:14px}
+.viewer-hint{position:absolute;top:62px;left:50%;transform:translateX(-50%);color:#fff;background:var(--gradient);padding:6px 14px;border-radius:999px;font-size:12px;font-weight:700;z-index:2;animation:fadeOut 4s ease forwards;pointer-events:none}
+@keyframes fadeOut{0%,40%{opacity:1}100%{opacity:0}}
+
+/* Lightbox */
+.lightbox{position:fixed;inset:0;background:rgba(0,0,0,.9);z-index:999;display:none;align-items:center;justify-content:center;padding:20px}
+.lightbox.open{display:flex}
+.lightbox img{max-width:96%;max-height:90vh;border-radius:12px}
+.lightbox-close{position:absolute;top:14px;right:14px;width:42px;height:42px;border-radius:50%;background:#fff;border:0;font-size:22px;cursor:pointer}
+
+/* Alert */
+.alert{padding:14px 18px;border-radius:14px;margin:12px 0;border-left:4px solid;font-size:14px;display:flex;gap:10px;align-items:flex-start}
+.alert-warn{background:rgba(245,158,11,.12);border-color:#f59e0b}
+.alert-info{background:rgba(96,165,250,.12);border-color:#60a5fa}
+.alert-tip{background:rgba(52,211,153,.12);border-color:#34d399}
+
+/* Timeline */
+.timeline{position:relative;padding-left:28px}
+.timeline::before{content:"";position:absolute;left:9px;top:6px;bottom:6px;width:2px;background:linear-gradient(var(--accent),var(--accent2))}
+.t-item{position:relative;margin-bottom:20px}
+.t-item::before{content:"";position:absolute;left:-26px;top:8px;width:14px;height:14px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 4px var(--bg)}
+.t-time{font-weight:800;font-size:14px;color:var(--accent2);margin-bottom:6px}
+.t-title{font-size:17px;font-weight:800;margin-bottom:4px}
+
+/* FAB */
+.fab{position:fixed;bottom:20px;right:20px;width:50px;height:50px;border-radius:50%;background:var(--gradient);color:#fff;border:0;font-size:22px;cursor:pointer;box-shadow:var(--shadow);z-index:90;display:none}
+.fab.show{display:block}
+
+/* Maps row */
+.maps-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px;margin-bottom:14px}
+
+/* ========== 手機版優化（手機為主）========== */
+@media(max-width:768px){
+  body{font-size:16px;line-height:1.7}
+  .topbar-inner{padding:10px 12px;gap:8px}
+  .brand{font-size:16px}
+  .nav{gap:5px}
+  .nav a{padding:8px 14px;font-size:13px;font-weight:700}
+  .theme-btn{padding:8px 12px;font-size:16px}
+  section{padding:28px 14px}
+  .hero{padding:30px 14px}
+  .hero h1{margin-bottom:14px}
+  .timeline{padding-left:24px}
+  .t-item::before{left:-24px;width:16px;height:16px}
+  .t-time{font-size:15px}
+  .t-title{font-size:17px}
+  .block{padding:16px;border-radius:16px}
+  .block-head h3{font-size:18px}
+  .day-banner{padding:18px}
+  .day-banner .num{font-size:36px}
+  .day-banner h2{font-size:20px}
+  .day-banner p{font-size:14px}
+  .card{padding:14px;border-radius:14px}
+  .card .ttl{font-size:16px}
+  .card .meta{font-size:13px}
+  .card .desc{font-size:14px}
+  .btn{padding:9px 14px;font-size:13px;min-height:40px}
+  .actions{gap:8px !important}
+  .alert{padding:14px 16px;font-size:14px;line-height:1.7}
+  .grid{gap:12px}
+  .grid-3{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+  .grid-4{grid-template-columns:repeat(2,1fr)}
+  .map-thumb::after{font-size:12px;padding:8px 14px;bottom:14px}
+  .pill{font-size:11px;padding:3px 10px}
+  .tag{font-size:12px;padding:4px 12px}
+  .section-title{font-size:24px}
+  .viewer-tools button{width:50px;height:50px;font-size:20px}
+  .viewer-close{width:48px;height:48px;font-size:24px}
+  .lightbox-close{width:48px;height:48px;font-size:24px}
+}
+@media(max-width:480px){
+  .grid-3{grid-template-columns:1fr}
+  .grid-4{grid-template-columns:repeat(2,1fr)}
+  .topbar-inner{padding:8px 10px}
+  .brand{font-size:14px}
+  .nav a{padding:7px 12px;font-size:12px}
+  .day-banner{padding:14px;gap:12px}
+  .day-banner .num{font-size:30px}
+  .cd{min-width:54px;padding:7px 10px}
+  .cd b{font-size:20px}
+}
+</style>
+</head>
+<body data-theme="dark">
+
+<!-- Topbar -->
+<div class="topbar">
+  <div class="topbar-inner">
+    <div class="brand">🇰🇷 首爾 5D4N</div>
+    <nav class="nav" id="nav">
+      <a href="#overview">概覽</a>
+      <a href="#flight">✈️ 航班</a>
+      <a href="#day1">DAY 1</a>
+      <a href="#day2">DAY 2</a>
+      <a href="#day3">DAY 3</a>
+      <a href="#day4">DAY 4</a>
+      <a href="#day5">DAY 5</a>
+      <a href="#anime">🎌 額外推薦</a>
+      <a href="#subway">🚇 地鐵</a>
+    </nav>
+    <button class="theme-btn" onclick="toggleTheme()" id="themeBtn">🌙</button>
+  </div>
+</div>
+
+<!-- Hero -->
+<header class="hero">
+  <h1>首爾 5 天 4 夜<br><span>美食・古蹟・購物 全攻略</span></h1>
+  <p>2026/07/14 (二) → 07/18 (六) ・ 3 位大人 ・ 中城飯店 明洞</p>
+  <div class="countdown" id="countdown">
+    <div class="cd"><b id="cd-d">--</b><span>天</span></div>
+    <div class="cd"><b id="cd-h">--</b><span>時</span></div>
+    <div class="cd"><b id="cd-m">--</b><span>分</span></div>
+    <div class="cd"><b id="cd-s">--</b><span>秒</span></div>
+  </div>
+</header>
+
+<!-- Overview -->
+<section id="overview">
+  <h2 class="section-title"><span class="emoji">🗺️</span>首爾景點地圖</h2>
+  <p class="section-sub">9 大熱門區域 & 交通距離一目瞭然 — 點擊地圖可放大平移</p>
+  <div class="map-thumb" onclick="openMap('DAY 1.png','首爾 9 大景點地圖')">
+    <img src="DAY 1.png" alt="首爾景點地圖">
+  </div>
+</section>
+
+<!-- Flight & Hotel -->
+<section id="flight">
+  <h2 class="section-title"><span class="emoji">✈️</span>航班 & 飯店</h2>
+  <p class="section-sub">台灣虎航 O5ZGVF / Hotel Midcity Myeongdong</p>
+
+  <div class="alert alert-warn">
+    <span>⏰</span>
+    <div><b>記得提早 2.5 小時抵達桃園機場 T1！</b><br>建議 7/14 17:30 前到機場 Check-in。回程班機 7/18 凌晨 00:30，等同 7/17 晚上就要前往仁川機場（建議 22:00 前到機場）。</div>
+  </div>
+
+  <div class="info-grid">
+    <div class="flight">
+      <div class="label">去程 IT602</div>
+      <div class="row">
+        <div><div class="city">TPE</div><div class="time">07/14 (二) 20:00</div><div class="time">桃園 T1</div></div>
+        <div class="arrow">→</div>
+        <div style="text-align:right"><div class="city">ICN</div><div class="time">07/14 (二) 23:30</div><div class="time">仁川 T1</div></div>
+      </div>
+    </div>
+    <div class="flight" style="background:linear-gradient(135deg,#60a5fa,#a855f7)">
+      <div class="label">回程 IT603</div>
+      <div class="row">
+        <div><div class="city">ICN</div><div class="time">07/18 (六) 00:30</div><div class="time">仁川 T1</div></div>
+        <div class="arrow">→</div>
+        <div style="text-align:right"><div class="city">TPE</div><div class="time">07/18 (六) 02:15</div><div class="time">桃園 T1</div></div>
+      </div>
+    </div>
+    <div class="card" style="background:var(--card)">
+      <div class="ttl">🏨 Hotel Midcity Myeongdong</div>
+      <div class="meta">中城飯店 明洞｜30, Dadong-gil, Jung-gu, Seoul</div>
+      <div class="desc">Check-in: 7/14 ／ Check-out: 7/18 ／ 1 間房 3 大人<br>📍 地鐵 2 號線 <b>乙支路入口站 2 號出口</b></div>
+      <div class="actions">
+        <a class="btn btn-map" target="_blank" href="https://www.google.com/maps/search/?api=1&query=Hotel+Midcity+Myeongdong+Seoul">🗺️ 地圖</a>
+        <a class="btn btn-route" target="_blank" href="https://www.google.com/maps/dir/?api=1&destination=Hotel+Midcity+Myeongdong+Seoul">🧭 路線</a>
+        <a class="btn btn-web" target="_blank" href="https://www.midcity.co.kr/">🔗 官網</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="alert alert-info">
+    <span>🚆</span>
+    <div><b>仁川機場 → 飯店交通建議</b><br>
+    1️⃣ <b>機場快線 AREX 直達車</b>（43 分到首爾站 9,500 韓元）→ 換 4 號線到「明洞站」<br>
+    2️⃣ <b>機場巴士 6015</b>（直達明洞，約 75 分鐘 17,000 韓元）<br>
+    3️⃣ <b>計程車</b>（約 65,000~80,000 韓元，深夜加成 20%）<br>
+    💡 7/14 抵達 23:30，<b>建議搭計程車</b>，AREX 末班約 23:30、機場巴士也很少了</div>
+  </div>
+</section>
+
+<!-- ======================= DAY 1 ======================= -->
+<section id="day1">
+  <div class="day-banner">
+    <div class="num">1</div>
+    <div class="info">
+      <h2>7/14 (二) ・ 抵達日</h2>
+      <p>桃園 → 仁川 → 明洞飯店 ・ 深夜入住</p>
+    </div>
+  </div>
+
+  <div class="block">
+    <div class="block-head"><span class="tag tag-evening">傍晚~深夜</span><h3>抵達流程</h3></div>
+    <div class="timeline">
+      <div class="t-item">
+        <div class="t-time">17:30</div>
+        <div class="t-title">桃園機場 T1 集合</div>
+        <div style="color:var(--muted);font-size:14px">提早 2.5 小時抵達；國際線報到、托運、出關</div>
+      </div>
+      <div class="t-item">
+        <div class="t-time">20:00 → 23:30</div>
+        <div class="t-title">✈️ IT602 桃園 → 仁川</div>
+        <div style="color:var(--muted);font-size:14px">飛行約 2.5 小時 ・ 韓國時間比台灣快 1 小時</div>
+      </div>
+      <div class="t-item">
+        <div class="t-time">23:30 後</div>
+        <div class="t-title">仁川入境 → 換錢 / T-money</div>
+        <div style="color:var(--muted);font-size:14px">機場 1F 有 T-money 自動售票機；7-11 / CU 也可儲值</div>
+      </div>
+      <div class="t-item">
+        <div class="t-time">約 01:00</div>
+        <div class="t-title">🏨 Check-in 中城飯店 明洞</div>
+        <div style="color:var(--muted);font-size:14px">建議計程車，省力又快速</div>
+      </div>
+    </div>
+
+    <div class="grid grid-4" style="margin-top:18px">
+      <div class="card"><img src="DAY1/4.png" alt="桃園機場" onclick="openLightbox(this.src)"><div class="ttl">桃園 T1</div></div>
+      <div class="card"><img src="DAY1/2.png" alt="仁川機場" onclick="openLightbox(this.src)"><div class="ttl">仁川 T1</div></div>
+      <div class="card"><img src="DAY1/1.png" alt="飯店" onclick="openLightbox(this.src)"><div class="ttl">Midcity 明洞</div></div>
+      <div class="card"><img src="DAY1/3.png" alt="便利商店" onclick="openLightbox(this.src)"><div class="ttl">CU/GS25 宵夜</div></div>
+    </div>
+    <div class="alert alert-tip">
+      <span>💡</span>
+      <div><b>抵達當晚別忘記！</b> CU、GS25 便利商店 24 小時營業，可買水、香蕉牛奶、辛拉麵當宵夜；ATM 可領現金（部分有手續費）。</div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= DAY 2 ======================= -->
+<section id="day2">
+  <div class="day-banner">
+    <div class="num">2</div>
+    <div class="info">
+      <h2>7/15 (三) ・ 古蹟 + 弘大</h2>
+      <p>景福宮/光化門 → 弘大商圈購物美食 → 延南洞</p>
+    </div>
+  </div>
+
+  <h3 style="margin:0 0 10px;font-size:17px">📍 第 2 天 區域總圖 ・ 點圖可放大平移</h3>
+  <div class="map-thumb" onclick="openMap('2.png','7/15 第二天 行程地圖')">
+    <img src="2.png" alt="第二天地圖">
+  </div>
+  <div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap">
+    <a class="btn btn-map" target="_blank" href="https://www.google.com/maps/search/?api=1&query=경복궁">🗺️ 景福宮 Google Maps</a>
+    <a class="btn btn-map" target="_blank" href="https://www.google.com/maps/search/?api=1&query=홍대입구역">🗺️ 弘大入口 Google Maps</a>
+    <a class="btn btn-map" target="_blank" href="https://www.google.com/maps/search/?api=1&query=연남동">🗺️ 延南洞 Google Maps</a>
+  </div>
+
+  <!-- 上午 景福宮/光化門 -->
+  <div class="block">
+    <div class="block-head"><span class="tag tag-morning">上午</span><h3>景福宮 / 光化門</h3><span class="area">地鐵 3 號線 景福宮站</span></div>
+
+    <div class="alert alert-info">
+      <span>👘</span>
+      <div><b>穿韓服免門票！</b>景福宮附近有韓服租借店（約 15,000~30,000 韓元 / 2 小時），穿韓服可免門票進入，拍照打卡超美。</div>
+    </div>
+
+    <div class="grid grid-2">
+      <div class="card">
+        <img src="DAY2/2.png" alt="景福宮" onclick="openLightbox(this.src)">
+        <div><span class="pill pill-spot">景點</span></div>
+        <div class="ttl">景福宮 경복궁</div>
+        <div class="meta">朝鮮王朝正宮 ・ 09:00~18:00（週二休）</div>
+        <div class="desc">守門將交接儀式 10:00 / 14:00 ・ 門票 3,000 韓元（穿韓服免費）</div>
+        <div class="actions">
+          <a class="btn btn-map" target="_blank" href="https://www.google.com/maps/search/?api=1&query=경복궁">🗺️ 地圖</a>
+          <a class="btn btn-route" target="_blank" href="https://www.google.com/maps/dir/?api=1&destination=경복궁">🧭 路線</a>
+          <a class="btn btn-web" target="_blank" href="https://royal.cha.go.kr/ENG/contents/E702000000.do">🔗 官網</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="DAY2/1.png" alt="光化門 世宗大王像" onclick="openLightbox(this.src)">
+        <div><span class="pill pill-spot">景點</span></div>
+        <div class="ttl">光化門廣場 / 世宗大王像</div>
+        <div class="meta">광화문광장 ・ 全天開放</div>
+        <div class="desc">景福宮正門前廣場 ・ 李舜臣將軍與世宗大王銅像，必拍打卡點</div>
+        <div class="actions">
+          <a class="btn btn-map" target="_blank" href="https://www.google.com/maps/search/?api=1&query=광화문광장">🗺️ 地圖</a>
+          <a class="btn btn-route" target="_blank" href="https://www.google.com/maps/dir/?api=1&destination=광화문광장">🧭 路線</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="教保文庫光化門店.jpg" alt="教保文庫光化門店" onclick="openLightbox(this.src)">
+        <div><span class="pill pill-anime">動漫/書店</span></div>
+        <div class="ttl">📚 教保文庫光化門店</div>
+        <div class="meta">光化門站 ・ 韓國最大書店</div>
+        <div class="desc">地下 1F 有完整漫畫區、進口日漫專區 + 文具區，可順道逛</div>
+        <div class="actions">
+          <a class="btn btn-map" target="_blank" href="https://www.google.com/maps/search/?api=1&query=교보문고+광화문">🗺️ 地圖</a>
+          <a class="btn btn-web" target="_blank" href="https://www.kyobobook.co.kr/">🔗 官網</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 午餐 光化門 第一製麵所 -->
+  <div class="block">
+    <div class="block-head"><span class="tag tag-noon">午餐</span><h3>光化門 ・ 第一製麵所</h3></div>
+    <div class="grid grid-2">
+      <div class="card">
+        <img src="DAY2/6.png" alt="第一製麵所 辣醬冷麵" onclick="openLightbox(this.src)">
+        <div><span class="pill pill-food">美食</span></div>
+        <div class="ttl">第一製麵所 제일제면소</div>
+        <div class="meta">光化門 ・ 辣醬拌冷麵 + 清湯水冷麵</div>
+        <div class="desc">CJ 集團經營，韓國米其林必比登推介 ・ 雙絕冷麵：圖中為招牌「辣醬拌冷麵」</div>
+        <div class="actions">
+          <a class="btn btn-map" target="_blank" href="https://www.google.com/maps/search/?api=1&query=제일제면소+광화문">🗺️ 地圖</a>
+          
+        </div>
+      </div>
+      <div class="card">
+        <img src="DAY2/7.png" alt="第一製麵所 拌冷麵" onclick="openLightbox(this.src)">
+        <div><span class="pill pill-food">美食</span></div>
+        <div class="ttl">第一製麵所（另一款）</div>
+        <div class="meta">招牌「辣醬冷麵 비빔냉면」</div>
+        <div class="desc">紅亮辣醬拌冷麵搭配半顆蛋與小黃瓜，夏天必吃</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 下午 弘大 -->
+  <div class="block">
+    <div class="block-head"><span class="tag tag-afternoon">下午</span><h3>弘大商圈 ・ 購物 + 動漫週邊</h3><span class="area">地鐵 2 號線 弘大入口站</span></div>
+
+    <h4 style="margin:0 0 8px;font-size:14px;color:var(--muted)">🗺️ 弘大美食購物地圖 A</h4>
+    <div class="map-thumb" style="margin-bottom:14px" onclick="openMap('DAY 2A.png','弘大美食購物地圖 A')">
+      <img src="DAY 2A.png" alt="弘大商圈地圖 A">
+    </div>
+    <h4 style="margin:0 0 8px;font-size:14px;color:var(--muted)">🗺️ 弘大商圈詳細地圖 B</h4>
+    <div class="map-thumb" style="margin-bottom:16px" onclick="openMap('DAY 2B.png','弘大商圈詳細地圖 B')">
+      <img src="DAY 2B.png" alt="弘大商圈地圖 B">
+    </div>
+
+    <div class="grid grid-3">
+      <div class="card">
+        <img src="DAY2/5.png" alt="AK PLAZA" onclick="openLightbox(this.src)">
+        <div><span class="pill pill-shop">購物</span></div>
+        <div class="ttl">🏬 AK PLAZA 弘大店</div>
+        <div class="meta">弘大入口站 1 號出口直通</div>
+        <div class="desc">集合 SPAO、KAKAO Friends、ARTBOX、NIKE 等知名品牌</div>
+        <div class="actions">
+          <a class="btn btn-map" target="_blank" href="https://www.google.com/maps/search/?api=1&query=AK+PLAZA+Hongdae">🗺️ 地圖</a>
+          <a class="btn btn-web" target="_blank" href="https://www.akplaza.com/">🔗 官網</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="Olive Young 弘大旗艦店.jpeg" alt="Olive Young 弘大旗艦店" onclick="openLightbox(this.src)">
+        <div><span class="pill pill-shop">購物</span></div>
+        <div class="ttl">💄 Olive Young 弘大旗艦店</div>
+        <div class="meta">韓國最大美妝藥妝店</div>
+        <div class="desc">退稅櫃台 ・ 必買面膜、洗面乳、Anua、Beauty of Joseon</div>
+        <div class="actions">
+          <a class="btn btn-map" target="_blank" href="https://www.google.com/maps/search/?api=1&query=Olive+Young+Hongdae">🗺️ 地圖</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="SPAO 弘大店.jpg" alt="SPAO 弘大店" onclick="openLightbox(this.src)">
+        <div><span class="pill pill-shop">購物</span></div>
+        <div class="ttl">👕 SPAO 弘大店</div>
+        <div class="meta">韓國國民品牌</div>
+        <div class="desc">K-pop 聯名 T-shirt、襪子、家居服 CP 值高</div>
+        <div class="actions">
+          <a class="btn btn-map" target="_blank" href="https://www.google.com/maps/search/?api=1&query=SPAO+Hongdae">🗺️ 地圖</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="LINE FRIENDS 弘大旗艦店.JPG" alt="LINE FRIENDS 弘大旗艦店" onclick="openLightbox(this.src)">
+        <div><span class="pill pill-anime">動漫週邊</span></div>
+        <div class="ttl">🐻 LINE FRIENDS 弘大旗艦店</div>
+        <div class="meta">弘大入口站 9 號出口</div>
+        <div class="desc">熊大、兔兔、莎莉週邊 + BT21 商品（防彈少年團聯名）</div>
+        <div class="actions">
+          <a class="btn btn-map" target="_blank" href="https://www.google.com/maps/search/?api=1&query=LINE+FRIENDS+홍대">🗺️ 地圖</a>
+          <a class="btn btn-web" target="_blank" href="https://linefriends.com/en">🔗 官網</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="KAKAO FRIENDS 弘大店.jpg" alt="KAKAO FRIENDS 弘大店" onclick="openLightbox(this.src)">
+        <div><span class="pill pill-anime">動漫週邊</span></div>
+        <div class="ttl">🐥 KAKAO FRIENDS 弘大店</div>
+        <div class="meta">AK PLAZA 內</div>
+        <div class="desc">Ryan、Apeach、Muzi 一拖拉庫週邊，限定款超萌</div>
+        <div class="actions">
+          <a class="btn btn-map" target="_blank" href="https://www.google.com/maps/search/?api=1&query=KAKAO+FRIENDS+홍대">🗺️ 地圖</a>
+          <a class="btn btn-web" target="_blank" href="https://store.kakaofriends.com/">🔗 官網</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="POP MART 弘大店.jpg" alt="POP MART 弘大店" onclick="openLightbox(this.src)">
+        <div><span class="pill pill-anime">盲盒/玩具</span></div>
+        <div class="ttl">🧸 POP MART 弘大店</div>
+        <div class="meta">弘大入口站</div>
+        <div class="desc">Molly、Labubu、Skullpanda 盲盒，限定款專屬韓國設計</div>
+        <div class="actions">
+          <a class="btn btn-map" target="_blank" href="https://www.google.com/maps/search/?api=1&query=POP+MART+홍대">🗺️ 地圖</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="ARTBOX 弘大店.jpg" alt="ARTBOX 弘大店" onclick="openLightbox(this.src)">
+        <div><span class="pill pill-anime">文具/雜貨</span></div>
+        <div class="ttl">🎲 ARTBOX 弘大店</div>
+        <div class="meta">弘大入口站</div>
+        <div class="desc">韓國版「文具大創」可愛週邊、卡通文具、KAKAO 聯名</div>
+        <div class="actions">
+          <a class="btn btn-map" target="_blank" href="https://www.google.com/maps/search/?api=1&query=아트박스+홍대">🗺️ 地圖</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="阿拉丁 ALADDIN 弘大店.jpg" alt="阿拉丁 ALADDIN 弘大店" onclick="openLightbox(this.src)">
+        <div><span class="pill pill-anime">二手書/漫畫</span></div>
+        <div class="ttl">📚 阿拉丁 ALADDIN 弘大店</div>
+        <div class="meta">韓國最大二手書店</div>
+        <div class="desc">二手日漫、輕小說超便宜（2,000~5,000 韓元）</div>
+        <div class="actions">
+          <a class="btn btn-map" target="_blank" href="https://www.google.com/maps/search/?api=1&query=알라딘+중고서점+홍대">🗺️ 地圖</a>
+        </div>
+      </div>
+    </div>
+
+    <h4 style="margin:18px 0 8px;font-size:14px;color:var(--muted)">📷 弘大街景</h4>
+    <div class="grid grid-3">
+      <div class="card" style="padding:0"><img src="DAY2/3.png" onclick="openLightbox(this.src)" style="aspect-ratio:1.4"></div>
+      <div class="card" style="padding:0"><img src="DAY2/4.png" onclick="openLightbox(this.src)" style="aspect-ratio:1.4"></div>
+    </div>
+  </div>
+
+  <!-- 晚餐 弘大餐廳 -->
+  <div class="block">
+    <div class="block-head"><span class="tag tag-evening">晚餐</span><h3>弘大美食</h3></div>
+    <div class="grid grid-2">
+      <div class="card">
+        <img src="DAY2/8.png" alt="豬腳小姐" onclick="openLightbox(this.src)">
+        <div><span class="pill pill-food">美食</span></div>
+        <div class="ttl">豬腳小姐 미쓰족발 (Myth Jokbal)</div>
+        <div class="meta">弘大 ・ 豬腳 + 菜包肉</div>
+        <div class="desc">弘大豬腳代表，圖中為招牌豬腳拼盤、生菜包肉、蒜末辣醬</div>
+        <div class="actions">
+          <a class="btn btn-map" target="_blank" href="https://www.google.com/maps/search/?api=1&query=미쓰족발+홍대">🗺️ 地圖</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="DAY2/9.png" alt="春川辣炒雞排" onclick="openLightbox(this.src)">
+        <div><span class="pill pill-food">美食</span></div>
+        <div class="ttl">春川炒雞 춘천닭갈비</div>
+        <div class="meta">弘大 ・ 春川式鐵盤辣炒雞排</div>
+        <div class="desc">圖中為起司辣炒雞排，吃完用飯炒鍋巴，必吃！</div>
+        <div class="actions">
+          <a class="btn btn-map" target="_blank" href="https://www.google.com/maps/search/?api=1&query=춘천닭갈비+홍대">🗺️ 地圖</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="DAY2/10.png" alt="馬鈴薯排骨湯" onclick="openLightbox(this.src)">
+        <div><span class="pill pill-food">美食</span></div>
+        <div class="ttl">豚壽百 돈수백</div>
+        <div class="meta">弘大 ・ 馬鈴薯排骨湯</div>
+        <div class="desc">超人氣大骨湯，圖中為清爽白湯款的排骨湯</div>
+        <div class="actions">
+          <a class="btn btn-map" target="_blank" href="https://www.google.com/maps/search/?api=1&query=돈수백+홍대">🗺️ 地圖</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="橋村炸雞 교촌치킨.jpg" alt="橋村炸雞 弘大店" onclick="openLightbox(this.src)">
+        <div><span class="pill pill-food">美食</span></div>
+        <div class="ttl">橋村炸雞 교촌치킨</div>
+        <div class="meta">弘大 ・ 韓國炸雞之王</div>
+        <div class="desc">蜂蜜原味雙絕，弘大店有內用區</div>
+        <div class="actions">
+          <a class="btn btn-map" target="_blank" href="https://www.google.com/maps/search/?api=1&query=교촌치킨+홍대">🗺️ 地圖</a>
+          <a class="btn btn-web" target="_blank" href="https://kyochon.com/">🔗 官網</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="申美京辣炒雞排 신미경닭갈비.jpg" alt="申美京辣炒雞排" onclick="openLightbox(this.src)">
+        <div><span class="pill pill-food">美食</span></div>
+        <div class="ttl">申美京辣炒雞排 신미경닭갈비</div>
+        <div class="meta">弘大 ・ 老字號鐵盤雞排</div>
+        <div class="desc">在地人推薦，CP 值高的家常雞排</div>
+        <div class="actions">
+          <a class="btn btn-map" target="_blank" href="https://www.google.com/maps/search/?api=1&query=신미경닭갈비">🗺️ 地圖</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="給豚的男人 돈주는남자.jpg" alt="給豚的男人" onclick="openLightbox(this.src)">
+        <div><span class="pill pill-food">美食</span></div>
+        <div class="ttl">給豚的男人 돈주는남자</div>
+        <div class="meta">弘大 ・ 手切五花肉</div>
+        <div class="desc">手切五花肉專賣店，肉質一級棒</div>
+        <div class="actions">
+          <a class="btn btn-map" target="_blank" href="https://www.google.com/maps/search/?api=1&query=돈주는남자+본점">🗺️ 地圖</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="李太祖馬鈴薯排骨湯 이대조뼈다귀.jpg" alt="李太祖馬鈴薯排骨湯" onclick="openLightbox(this.src)">
+        <div><span class="pill pill-food">美食</span></div>
+        <div class="ttl">李太祖馬鈴薯排骨湯 이대조뼈다귀</div>
+        <div class="meta">弘大 ・ 平價湯品</div>
+        <div class="desc">弘大老字號平價湯名店</div>
+        <div class="actions">
+          <a class="btn btn-map" target="_blank" href="https://www.google.com/maps/search/?api=1&query=이대조뼈다귀">🗺️ 地圖</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="柿樹屋司機食堂 감나무집기사식당.jpg" alt="柿樹屋司機食堂" onclick="openLightbox(this.src)">
+        <div><span class="pill pill-food">美食</span></div>
+        <div class="ttl">柿樹屋司機食堂 감나무집기사식당</div>
+        <div class="meta">弘大 ・ 在地家常韓食</div>
+        <div class="desc">當地司機愛去的家常韓食，便宜大碗</div>
+        <div class="actions">
+          <a class="btn btn-map" target="_blank" href="https://www.google.com/maps/search/?api=1&query=감나무집기사식당">🗺️ 地圖</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 晚上 延南洞 -->
+  <div class="block">
+    <div class="block-head"><span class="tag tag-late">晚上</span><h3>延南洞 ・ 文青咖啡街</h3><span class="area">弘大入口站 3 號出口</span></div>
+
+    <div class="grid grid-2">
+      <div class="card">
+        <img src="DAY2/11.png" alt="漢陽家" onclick="openLightbox(this.src)">
+        <div><span class="pill pill-food">美食</span></div>
+        <div class="ttl">漢陽家 한양가</div>
+        <div class="meta">延南洞 ・ 韓屋韓食</div>
+        <div class="desc">圖中為招牌套餐：海鮮蔥煎餅、烤肉泡菜鍋、生牛肉拌飯 ・ 還有<b>現切蜂巢蜂蜜米酒</b>必拍！</div>
+        <div class="actions">
+          <a class="btn btn-map" target="_blank" href="https://www.google.com/maps/search/?api=1&query=한양가+연남">🗺️ 地圖</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="DAY2/12.png" alt="風川鰻魚" onclick="openLightbox(this.src)">
+        <div><span class="pill pill-food">美食</span></div>
+        <div class="ttl">風川鰻魚 풍천장어 (延南店)</div>
+        <div class="meta">延南洞 ・ 烤鰻魚</div>
+        <div class="desc">傳統韓式烤鰻魚，圖中為招牌生菜包鰻魚、薑絲、辣醬</div>
+        <div class="actions">
+          <a class="btn btn-map" target="_blank" href="https://www.google.com/maps/search/?api=1&query=풍천장어+연남">🗺️ 地圖</a>
+        </div>
+      </div>
+    </div>
+    <div class="alert alert-tip">
+      <span>🌳</span>
+      <div><b>延南洞散步路線：</b>京義線林蔭道是廢棄鐵道改造的綠帶公園，咖啡店、特色小店、林蔭草地野餐都是這裡的特色。</div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= DAY 3 ======================= -->
+<section id="day3">
+  <div class="day-banner">
+    <div class="num">3</div>
+    <div class="info">
+      <h2>7/16 (四) ・ 韓屋 + 益善洞</h2>
+      <p>北村韓屋村 → 三清洞咖啡 → 仁寺洞益善洞 → 明洞夜市</p>
+    </div>
+  </div>
+
+  <h3 style="margin:0 0 10px;font-size:17px">📍 第 3 天 區域總圖 ・ 點圖可放大平移</h3>
+  <div class="map-thumb" onclick="openMap('3.png','7/16 第三天 行程地圖')">
+    <img src="3.png" alt="第三天地圖">
+  </div>
+  <div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap">
+    <a class="btn btn-map" target="_blank" href="https://www.google.com/maps/search/?api=1&query=북촌한옥마을">🗺️ 北村韓屋村</a>
+    <a class="btn btn-map" target="_blank" href="https://www.google.com/maps/search/?api=1&query=익선동">🗺️ 益善洞</a>
+    <a class="btn btn-map" target="_blank" href="https://www.google.com/maps/search/?api=1&query=명동거리">🗺️ 明洞夜市</a>
+  </div>
+
+  <!-- 上午 北村+三清洞 -->
+  <div class="block">
+    <div class="block-head"><span class="tag tag-morning">上午</span><h3>北村韓屋村 / 三清洞</h3><span class="area">地鐵 3 號線 安國站 2 號出口</span></div>
+
+    <div class="alert alert-warn">
+      <span>🤫</span>
+      <div><b>北村是居民實際居住地</b> ・ <b>10:00~17:00 請輕聲細語</b>，部分巷弄禁止進入要看告示牌。</div>
+    </div>
+
+    <h4 style="margin:0 0 8px;font-size:14px;color:var(--muted)">🗺️ 三清洞景點地圖</h4>
+    <div class="map-thumb" style="margin-bottom:16px" onclick="openMap('DAY 3A.png','三清洞景點地圖')">
+      <img src="DAY 3A.png" alt="三清洞地圖">
+    </div>
+
+    <div class="grid grid-2">
+      <div class="card">
+        <img src="DAY3/1.png" alt="北村韓屋村" onclick="openLightbox(this.src)">
+        <div><span class="pill pill-spot">景點</span></div>
+        <div class="ttl">北村韓屋村 북촌한옥마을</div>
+        <div class="meta">傳統韓屋聚落 ・ 8 大景點打卡</div>
+        <div class="desc">朝鮮時代貴族住宅街道完整保留，可俯瞰首爾與南山塔</div>
+        <div class="actions">
+          <a class="btn btn-map" target="_blank" href="https://www.google.com/maps/search/?api=1&query=북촌한옥마을">🗺️ 地圖</a>
+          <a class="btn btn-route" target="_blank" href="https://www.google.com/maps/dir/?api=1&destination=북촌한옥마을">🧭 路線</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="DAY3/2.png" alt="三清洞" onclick="openLightbox(this.src)">
+        <div><span class="pill pill-spot">景點</span></div>
+        <div class="ttl">三清洞 삼청동</div>
+        <div class="meta">咖啡街 + 美術館街</div>
+        <div class="desc">藏在景福宮東側的優雅小巷，咖啡店、古董藝廊、特色小店</div>
+        <div class="actions">
+          <a class="btn btn-map" target="_blank" href="https://www.google.com/maps/search/?api=1&query=삼청동">🗺️ 地圖</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 午餐 北村手工餃子 -->
+  <div class="block">
+    <div class="block-head"><span class="tag tag-noon">午餐</span><h3>北村手工餃子 + 三清洞咖啡</h3></div>
+    <div class="grid grid-2">
+      <div class="card">
+        <img src="DAY3/6.png" alt="北村手工餃子" onclick="openLightbox(this.src)">
+        <div><span class="pill pill-food">美食</span></div>
+        <div class="ttl">北村手工餃子 북촌손만두</div>
+        <div class="meta">三清洞 ・ 必吃手工水餃</div>
+        <div class="desc">圖中為招牌手工水餃 + 蒸餃，皮薄餡多，CP 值超高</div>
+        <div class="actions">
+          <a class="btn btn-map" target="_blank" href="https://www.google.com/maps/search/?api=1&query=북촌손만두">🗺️ 地圖</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="DAY3/7.png" alt="三清洞咖啡" onclick="openLightbox(this.src)">
+        <div><span class="pill pill-food">咖啡</span></div>
+        <div class="ttl">三清洞韓屋咖啡（推薦：北村展望台咖啡）</div>
+        <div class="meta">三清洞 ・ 韓屋頂樓 view</div>
+        <div class="desc">圖中為從韓屋瓦房俯瞰韓屋村的招牌 view，一杯咖啡 + 一個甜點，超出片</div>
+        <div class="actions">
+          <a class="btn btn-map" target="_blank" href="https://www.google.com/maps/search/?api=1&query=북촌+한옥+카페">🗺️ 地圖</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 下午 仁寺洞 + 益善洞 -->
+  <div class="block">
+    <div class="block-head"><span class="tag tag-afternoon">下午</span><h3>仁寺洞 / 益善洞</h3><span class="area">地鐵 3 號線 安國站 / 鐘路 3 街站</span></div>
+
+    <h4 style="margin:0 0 8px;font-size:14px;color:var(--muted)">🗺️ 益善洞美食地圖</h4>
+    <div class="map-thumb" style="margin-bottom:16px" onclick="openMap('DAY 3B.png','益善洞美食地圖')">
+      <img src="DAY 3B.png" alt="益善洞美食地圖">
+    </div>
+
+    <div class="grid grid-2">
+      <div class="card">
+        <img src="DAY3/3.png" alt="Ssamzigil 人人廣場" onclick="openLightbox(this.src)">
+        <div><span class="pill pill-shop">逛街</span></div>
+        <div class="ttl">仁寺洞 Ssamzigil 인사동 쌈지길</div>
+        <div class="meta">韓國藝術小品集散地</div>
+        <div class="desc">韓紙、毛筆、陶瓷、傳統茶屋 ・ 圖中為螺旋式設計建築 Ssamzigil（人人廣場）</div>
+        <div class="actions">
+          <a class="btn btn-map" target="_blank" href="https://www.google.com/maps/search/?api=1&query=쌈지길+인사동">🗺️ 地圖</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="DAY3/4.png" alt="益善洞" onclick="openLightbox(this.src)">
+        <div><span class="pill pill-spot">景點</span></div>
+        <div class="ttl">益善洞 익선동</div>
+        <div class="meta">100 年韓屋翻新區</div>
+        <div class="desc">圖中為益善洞特色：舊韓屋庭院 + 鐵軌造景咖啡街，復古文青地</div>
+        <div class="actions">
+          <a class="btn btn-map" target="_blank" href="https://www.google.com/maps/search/?api=1&query=익선동">🗺️ 地圖</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="DAY3/9.png" alt="Solsot 釜飯" onclick="openLightbox(this.src)">
+        <div><span class="pill pill-food">美食</span></div>
+        <div class="ttl">Solsot 釜飯 솥 익선동</div>
+        <div class="meta">益善洞 ・ 銅板釜飯定食</div>
+        <div class="desc">圖中為招牌釜飯定食，銅板飯 + 各式韓式拌菜 + 主菜，CP 值高</div>
+        <div class="actions">
+          <a class="btn btn-map" target="_blank" href="https://www.google.com/maps/search/?api=1&query=솥+익선동">🗺️ 地圖</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="DAY3/11.png" alt="好好食堂" onclick="openLightbox(this.src)">
+        <div><span class="pill pill-food">美食</span></div>
+        <div class="ttl">好好食堂 호호식당</div>
+        <div class="meta">益善洞 ・ 韓屋食堂</div>
+        <div class="desc">圖中為招牌煎餅拼盤（韭菜煎餅、蛋餅、櫛瓜煎），韓屋改造食堂氛圍佳</div>
+        <div class="actions">
+          <a class="btn btn-map" target="_blank" href="https://www.google.com/maps/search/?api=1&query=호호식당+익선동">🗺️ 地圖</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="DAY3/10.png" alt="韓式炸醬麵" onclick="openLightbox(this.src)">
+        <div><span class="pill pill-food">美食</span></div>
+        <div class="ttl">仁寺洞韓式炸醬麵</div>
+        <div class="meta">仁寺洞 / 鐘路 ・ 韓式中華</div>
+        <div class="desc">圖中為韓式炸醬麵 짜장면，鐘路一帶有多家老字號中華料理</div>
+        <div class="actions">
+          <a class="btn btn-map" target="_blank" href="https://www.google.com/maps/search/?api=1&query=짜장면+인사동">🗺️ 地圖</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="永豐文庫鐘閣店.jpg" alt="永豐文庫鐘閣店" onclick="openLightbox(this.src)">
+        <div><span class="pill pill-anime">書店</span></div>
+        <div class="ttl">📚 永豐文庫鐘閣店</div>
+        <div class="meta">鐘閣站 ・ 仁寺洞旁</div>
+        <div class="desc">大型書店，有韓文版日漫、卡片遊戲、模型，順道逛剛剛好</div>
+        <div class="actions">
+          <a class="btn btn-map" target="_blank" href="https://www.google.com/maps/search/?api=1&query=영풍문고+종각">🗺️ 地圖</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 晚上 明洞夜市 -->
+  <div class="block">
+    <div class="block-head"><span class="tag tag-evening">晚上</span><h3>明洞夜市</h3><span class="area">飯店步行 1 分鐘</span></div>
+    <div class="grid grid-2">
+      <div class="card">
+        <img src="DAY3/5.png" alt="明洞夜市" onclick="openLightbox(this.src)">
+        <div><span class="pill pill-food">逛吃</span></div>
+        <div class="ttl">明洞夜市 명동거리</div>
+        <div class="meta">18:00~23:00 攤販陸續開張</div>
+        <div class="desc">街邊小吃天堂：辣炒年糕、烤魷魚、烤鰻魚、龍蝦起司、芒果冰、炸薯條雞肉串</div>
+        <div class="actions">
+          <a class="btn btn-map" target="_blank" href="https://www.google.com/maps/search/?api=1&query=명동거리">🗺️ 地圖</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="DAY3/8.png" alt="辣炒年糕" onclick="openLightbox(this.src)">
+        <div><span class="pill pill-food">街邊</span></div>
+        <div class="ttl">辣炒年糕 떡볶이</div>
+        <div class="meta">明洞夜市必吃</div>
+        <div class="desc">圖中為招牌甜辣醬炒年糕，芝麻 + 蔥花，國民街邊美食</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= DAY 4 ======================= -->
+<section id="day4">
+  <div class="day-banner">
+    <div class="num">4</div>
+    <div class="info">
+      <h2>7/17 (五) ・ 東大門 + 聖水洞</h2>
+      <p>東大門 DDP / 清溪川 → 聖水洞 → 建大 → 明洞</p>
+    </div>
+  </div>
+
+  <h3 style="margin:0 0 10px;font-size:17px">📍 第 4 天 區域總圖 ・ 點圖可放大平移</h3>
+  <div class="map-thumb" onclick="openMap('4.png','7/17 第四天 行程地圖')">
+    <img src="4.png" alt="第四天地圖">
+  </div>
+  <div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap">
+    <a class="btn btn-map" target="_blank" href="https://www.google.com/maps/search/?api=1&query=DDP+동대문디자인플라자">🗺️ 東大門 DDP</a>
+    <a class="btn btn-map" target="_blank" href="https://www.google.com/maps/search/?api=1&query=성수동">🗺️ 聖水洞</a>
+    <a class="btn btn-map" target="_blank" href="https://www.google.com/maps/search/?api=1&query=건대입구">🗺️ 建大入口</a>
+  </div>
+
+  <div class="alert alert-warn">
+    <span>🚨</span>
+    <div><b>明天凌晨 00:30 飛機回台！</b>建議今晚 22:00 前回飯店收行李，22:30 出發前往仁川機場。或者把行李寄存在飯店，下午直接從聖水洞 → 機場（地鐵 2 號線 → 機場快線）。</div>
+  </div>
+
+  <!-- 上午 東大門 -->
+  <div class="block">
+    <div class="block-head"><span class="tag tag-morning">上午</span><h3>東大門 / 清溪川</h3><span class="area">地鐵 2/4/5 號線 東大門歷史文化公園站</span></div>
+
+    <h4 style="margin:0 0 8px;font-size:14px;color:var(--muted)">🗺️ 東大門景點美食地圖</h4>
+    <div class="map-thumb" style="margin-bottom:16px" onclick="openMap('DAY 4A.png','東大門景點美食地圖')">
+      <img src="DAY 4A.png" alt="東大門地圖">
+    </div>
+
+    <div class="grid grid-2">
+      <div class="card">
+        <img src="DAY4/1.png" alt="DDP 東大門設計廣場" onclick="openLightbox(this.src)">
+        <div><span class="pill pill-spot">景點</span></div>
+        <div class="ttl">DDP 東大門設計廣場 동대문디자인플라자</div>
+        <div class="meta">東大門歷史文化公園站 1 號出口</div>
+        <div class="desc">扎哈．哈蒂設計的未來感建築，夜間打燈超美</div>
+        <div class="actions">
+          <a class="btn btn-map" target="_blank" href="https://www.google.com/maps/search/?api=1&query=DDP+동대문디자인플라자">🗺️ 地圖</a>
+          <a class="btn btn-web" target="_blank" href="https://www.ddp.or.kr/">🔗 官網</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="DAY4/2.png" alt="清溪川" onclick="openLightbox(this.src)">
+        <div><span class="pill pill-spot">景點</span></div>
+        <div class="ttl">清溪川 청계천</div>
+        <div class="meta">市廳站 / 鐘閣站 ・ 全天</div>
+        <div class="desc">市中心的人造溪流，散步、夜景燈飾 ・ 夏季可下水踩水超清涼</div>
+        <div class="actions">
+          <a class="btn btn-map" target="_blank" href="https://www.google.com/maps/search/?api=1&query=청계천">🗺️ 地圖</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="Doota Mall   樂天 Fitin.jpg" alt="Doota Mall 樂天 Fitin" onclick="openLightbox(this.src)">
+        <div><span class="pill pill-shop">購物</span></div>
+        <div class="ttl">🏬 Doota Mall / 樂天 Fitin / APM</div>
+        <div class="meta">東大門商圈 ・ 22:00 後最熱鬧</div>
+        <div class="desc">夜貓子購物天堂，批發市場 + 商場，現代 City Outlets 也在附近</div>
+        <div class="actions">
+          <a class="btn btn-map" target="_blank" href="https://www.google.com/maps/search/?api=1&query=두타몰">🗺️ 地圖</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 午餐 馬鈴薯排骨湯 -->
+  <div class="block">
+    <div class="block-head"><span class="tag tag-noon">午餐</span><h3>東大門周邊 ・ 暖胃湯品</h3></div>
+    <div class="grid grid-2">
+      <div class="card">
+        <img src="DAY4/8.png" alt="24時 元祖馬鈴薯排骨湯" onclick="openLightbox(this.src)">
+        <div><span class="pill pill-food">美食</span></div>
+        <div class="ttl">24시 용산원조감자탕</div>
+        <div class="meta">龍山 / 24 小時營業</div>
+        <div class="desc">圖中為招牌豬骨馬鈴薯湯，飯後加飯炒鍋巴最讚 ・ 深夜食堂首選</div>
+        <div class="actions">
+          <a class="btn btn-map" target="_blank" href="https://www.google.com/maps/search/?api=1&query=24시+용산원조감자탕">🗺️ 地圖</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 下午 聖水洞 -->
+  <div class="block">
+    <div class="block-head"><span class="tag tag-afternoon">下午</span><h3>聖水洞 ・「首爾的布魯克林」</h3><span class="area">地鐵 2 號線 聖水站 3 / 4 號出口</span></div>
+
+    <h4 style="margin:0 0 8px;font-size:14px;color:var(--muted)">🗺️ 聖水洞美食地圖</h4>
+    <div class="map-thumb" style="margin-bottom:16px" onclick="openMap('DAY 4B.png','聖水洞美食地圖')">
+      <img src="DAY 4B.png" alt="聖水洞地圖">
+    </div>
+
+    <div class="grid grid-3">
+      <div class="card">
+        <img src="DAY4/3.png" alt="聖水洞建築" onclick="openLightbox(this.src)">
+        <div><span class="pill pill-shop">逛街</span></div>
+        <div class="ttl">聖水洞品牌旗艦區</div>
+        <div class="meta">舊工廠改造的咖啡店、品牌</div>
+        <div class="desc">圖中為聖水洞特色現代建築，知名品牌：Tamburins、Nudake、LCDC、D&Department</div>
+        <div class="actions">
+          <a class="btn btn-map" target="_blank" href="https://www.google.com/maps/search/?api=1&query=성수동">🗺️ 地圖</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="Tamburins 聖水旗艦店.jpg" alt="Tamburins 聖水旗艦店" onclick="openLightbox(this.src)">
+        <div><span class="pill pill-shop">設計師品牌</span></div>
+        <div class="ttl">🌸 Tamburins 聖水旗艦店</div>
+        <div class="meta">聖水洞</div>
+        <div class="desc">韓國高級香氛護手霜品牌，IG 必拍空間</div>
+        <div class="actions">
+          <a class="btn btn-map" target="_blank" href="https://www.google.com/maps/search/?api=1&query=Tamburins+성수">🗺️ 地圖</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="Nudake 聖水店.jpg" alt="Nudake 聖水店" onclick="openLightbox(this.src)">
+        <div><span class="pill pill-shop">咖啡甜點</span></div>
+        <div class="ttl">🍰 Nudake 聖水店</div>
+        <div class="meta">聖水洞</div>
+        <div class="desc">藝術感韓式甜點店，經典抹茶蛋糕、可頌一定要試</div>
+        <div class="actions">
+          <a class="btn btn-map" target="_blank" href="https://www.google.com/maps/search/?api=1&query=Nudake+성수">🗺️ 地圖</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="DAY4/7.png" alt="大成肋排" onclick="openLightbox(this.src)">
+        <div><span class="pill pill-food">美食</span></div>
+        <div class="ttl">大成肋排 대성갈비</div>
+        <div class="meta">聖水洞 ・ 豬肋排街</div>
+        <div class="desc">圖中為招牌烤豬肋排，又香又嫩，搭配冷麵超讚</div>
+        <div class="actions">
+          <a class="btn btn-map" target="_blank" href="https://www.google.com/maps/search/?api=1&query=대성갈비+성수">🗺️ 地圖</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="DAY4/9.png" alt="烤五花肉" onclick="openLightbox(this.src)">
+        <div><span class="pill pill-food">美食</span></div>
+        <div class="ttl">聖水洞烤五花肉專賣</div>
+        <div class="meta">聖水洞 ・ 練武場街</div>
+        <div class="desc">圖中為烤五花，搭配辣泡菜、蔥絲與包菜，是練武場街招牌</div>
+        <div class="actions">
+          <a class="btn btn-map" target="_blank" href="https://www.google.com/maps/search/?api=1&query=성수동+삼겹살+연무장길">🗺️ 地圖</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="DAY4/10.png" alt="陵洞水芹牛肉" onclick="openLightbox(this.src)">
+        <div><span class="pill pill-food">美食</span></div>
+        <div class="ttl">陵洞水芹牛肉 능동미나리소고기</div>
+        <div class="meta">聖水洞 / 陵洞 ・ 韃靼生牛肉</div>
+        <div class="desc">圖中為招牌生牛肉拌飯（육회）+ 蛋黃 + 水芹蔬菜，新鮮嫩肉</div>
+        <div class="actions">
+          <a class="btn btn-map" target="_blank" href="https://www.google.com/maps/search/?api=1&query=능동+미나리+소고기">🗺️ 地圖</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="DAY4/11.png" alt="風川鰻魚 聖水店" onclick="openLightbox(this.src)">
+        <div><span class="pill pill-food">美食</span></div>
+        <div class="ttl">風川鰻魚（聖水店）풍천장어</div>
+        <div class="meta">聖水洞 ・ 烤鰻魚</div>
+        <div class="desc">圖中為網烤鰻魚，搭配薑絲、芝麻油、紫蘇葉，香氣四溢</div>
+        <div class="actions">
+          <a class="btn btn-map" target="_blank" href="https://www.google.com/maps/search/?api=1&query=풍천장어+성수">🗺️ 地圖</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="DAY4/6.png" alt="橋村炸雞" onclick="openLightbox(this.src)">
+        <div><span class="pill pill-food">美食</span></div>
+        <div class="ttl">橋村炸雞 교촌치킨</div>
+        <div class="meta">聖水 / 全韓國分店</div>
+        <div class="desc">韓國國民炸雞，聖水 / 建大都有店面</div>
+        <div class="actions">
+          <a class="btn btn-map" target="_blank" href="https://www.google.com/maps/search/?api=1&query=교촌치킨+성수">🗺️ 地圖</a>
+          <a class="btn btn-web" target="_blank" href="https://kyochon.com/">🔗 官網</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="練武場街馬鈴薯排骨湯.jpg" alt="練武場街馬鈴薯排骨湯" onclick="openLightbox(this.src)">
+        <div><span class="pill pill-food">美食</span></div>
+        <div class="ttl">練武場街馬鈴薯排骨湯</div>
+        <div class="meta">聖水洞 ・ 練武場街</div>
+        <div class="desc">小巷子裡的湯名店，當地人推薦，份量十足</div>
+        <div class="actions">
+          <a class="btn btn-map" target="_blank" href="https://www.google.com/maps/search/?api=1&query=성수동+감자탕+연무장길">🗺️ 地圖</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 晚上 建大 -->
+  <div class="block">
+    <div class="block-head"><span class="tag tag-evening">晚上</span><h3>建大入口 ・ 學生商圈</h3><span class="area">地鐵 2 / 7 號線 建大入口站</span></div>
+    <div class="grid grid-2">
+      <div class="card">
+        <img src="DAY4/4.png" alt="建大商圈" onclick="openLightbox(this.src)">
+        <div><span class="pill pill-shop">逛街</span></div>
+        <div class="ttl">建大商圈 건대입구</div>
+        <div class="meta">建國大學商圈</div>
+        <div class="desc">大學商圈，平價美食 + 衣服 + 酒吧街，圖中為建大紅色招牌街</div>
+        <div class="actions">
+          <a class="btn btn-map" target="_blank" href="https://www.google.com/maps/search/?api=1&query=건대입구">🗺️ 地圖</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="Common Ground 貨櫃商場.jpg" alt="Common Ground 貨櫃商場" onclick="openLightbox(this.src)">
+        <div><span class="pill pill-shop">購物</span></div>
+        <div class="ttl">🏬 Common Ground 貨櫃商場</div>
+        <div class="meta">建大入口站</div>
+        <div class="desc">韓國最大貨櫃改造商場，個性小品牌 + 街頭美食</div>
+        <div class="actions">
+          <a class="btn btn-map" target="_blank" href="https://www.google.com/maps/search/?api=1&query=커먼그라운드">🗺️ 地圖</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= DAY 5 ======================= -->
+<section id="day5">
+  <div class="day-banner">
+    <div class="num">5</div>
+    <div class="info">
+      <h2>7/18 (六) ・ 南山塔 + 回程</h2>
+      <p>南山塔 / 明洞聖堂 → 明洞商圈最後血拼 → 凌晨 00:30 班機</p>
+    </div>
+  </div>
+
+  <h3 style="margin:0 0 10px;font-size:17px">📍 第 5 天 區域總圖 ・ 點圖可放大平移</h3>
+  <div class="map-thumb" onclick="openMap('5.png','7/18 第五天 行程地圖')">
+    <img src="5.png" alt="第五天地圖">
+  </div>
+  <div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap">
+    <a class="btn btn-map" target="_blank" href="https://www.google.com/maps/search/?api=1&query=N+서울타워">🗺️ N 首爾塔</a>
+    <a class="btn btn-map" target="_blank" href="https://www.google.com/maps/search/?api=1&query=명동성당">🗺️ 明洞聖堂</a>
+    <a class="btn btn-map" target="_blank" href="https://www.google.com/maps/search/?api=1&query=명동">🗺️ 明洞商圈</a>
+  </div>
+
+  <div class="alert alert-warn">
+    <span>⏰</span>
+    <div><b>嚴格時間管理！</b>因為是凌晨班機，技術上是 7/17 晚上就要出發。Check-out 時間請與飯店確認延遲退房（通常可延到下午）。<b>22:00 之前請出發前往機場！</b></div>
+  </div>
+
+  <!-- 上午 南山 / 明洞聖堂 -->
+  <div class="block">
+    <div class="block-head"><span class="tag tag-morning">上午</span><h3>南山塔 / 明洞聖堂 / 趣味路</h3></div>
+    <div class="grid grid-3">
+      <div class="card">
+        <img src="DAY5/1.png" alt="南山塔" onclick="openLightbox(this.src)">
+        <div><span class="pill pill-spot">景點</span></div>
+        <div class="ttl">N 首爾塔（南山塔）</div>
+        <div class="meta">明洞站搭纜車 / 南山循環巴士 02、05</div>
+        <div class="desc">首爾地標 ・ 360 度首爾景觀 ・ 情人愛情鎖牆 ・ 觀景台 16,000 韓元</div>
+        <div class="actions">
+          <a class="btn btn-map" target="_blank" href="https://www.google.com/maps/search/?api=1&query=N+서울타워">🗺️ 地圖</a>
+          <a class="btn btn-web" target="_blank" href="https://www.nseoultower.co.kr/">🔗 官網</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="DAY5/2.png" alt="明洞聖堂" onclick="openLightbox(this.src)">
+        <div><span class="pill pill-spot">景點</span></div>
+        <div class="ttl">明洞聖堂 명동성당</div>
+        <div class="meta">明洞站 8 號出口</div>
+        <div class="desc">韓國第一座哥德式天主教堂，1898 年完工 ・ 旁邊有 1898 商場</div>
+        <div class="actions">
+          <a class="btn btn-map" target="_blank" href="https://www.google.com/maps/search/?api=1&query=명동성당">🗺️ 地圖</a>
+          <a class="btn btn-web" target="_blank" href="http://www.mdsd.or.kr/">🔗 官網</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="DAY5/3.png" alt="趣味路" onclick="openLightbox(this.src)">
+        <div><span class="pill pill-anime">動漫景點</span></div>
+        <div class="ttl">趣味路 재미로</div>
+        <div class="meta">明洞站 3 號出口（南山路上去）</div>
+        <div class="desc">韓國漫畫主題街，沿路漫畫雕塑、3D 壁畫，上山去南山塔順道經過</div>
+        <div class="actions">
+          <a class="btn btn-map" target="_blank" href="https://www.google.com/maps/search/?api=1&query=재미로+남산">🗺️ 地圖</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="block">
+    <div class="block-head"><h3>🗺️ 明洞商圈詳細地圖</h3></div>
+    <div class="map-thumb" onclick="openMap('DAY 5.png','明洞美食景點逛街地圖')">
+      <img src="DAY 5.png" alt="明洞地圖">
+    </div>
+    <img src="DAY5/4.png" alt="明洞商圈" onclick="openLightbox(this.src)" style="margin-top:14px;cursor:zoom-in">
+  </div>
+
+  <div class="block">
+    <div class="block-head"><span class="tag tag-noon">中午到傍晚</span><h3>明洞商圈 ・ 美食大集合</h3><span class="area">飯店步行 1 分鐘</span></div>
+    <div class="grid grid-3">
+      <div class="card">
+        <img src="DAY5/7.png" alt="明洞餃子" onclick="openLightbox(this.src)">
+        <div><span class="pill pill-food">美食</span></div>
+        <div class="ttl">明洞餃子 명동교자</div>
+        <div class="meta">明洞 ・ 創立 1966 年</div>
+        <div class="desc">圖中為招牌手工餃子 + 칼국수（刀削麵），明洞代表老店</div>
+        <div class="actions">
+          <a class="btn btn-map" target="_blank" href="https://www.google.com/maps/search/?api=1&query=명동교자+본점">🗺️ 地圖</a>
+          <a class="btn btn-web" target="_blank" href="https://www.mdkj.co.kr/">🔗 官網</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="DAY5/8.png" alt="開花" onclick="openLightbox(this.src)">
+        <div><span class="pill pill-food">美食</span></div>
+        <div class="ttl">開花 개화</div>
+        <div class="meta">明洞 ・ 高級韓式中華</div>
+        <div class="desc">圖中為招牌韓式炸醬麵，黑亮醬汁 + 彈牙麵條，明洞老字號</div>
+        <div class="actions">
+          <a class="btn btn-map" target="_blank" href="https://www.google.com/maps/search/?api=1&query=개화+명동">🗺️ 地圖</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="DAY5/9.png" alt="長今煎家" onclick="openLightbox(this.src)">
+        <div><span class="pill pill-food">美食</span></div>
+        <div class="ttl">長今煎家 장금이전가</div>
+        <div class="meta">明洞 ・ 韓式煎餅 + 馬格利酒</div>
+        <div class="desc">圖中為招牌海鮮蔥煎餅，蘸蒜醬油，搭馬格利酒一絕</div>
+        <div class="actions">
+          <a class="btn btn-map" target="_blank" href="https://www.google.com/maps/search/?api=1&query=장금이전가">🗺️ 地圖</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="DAY5/6.png" alt="神仙雪濃湯" onclick="openLightbox(this.src)">
+        <div><span class="pill pill-food">美食</span></div>
+        <div class="ttl">神仙雪濃湯 신선설농탕</div>
+        <div class="meta">明洞 ・ 24 小時</div>
+        <div class="desc">圖中為招牌雪濃湯，雪白牛骨湯 + 蘿蔔泡菜，深夜回飯店前的暖胃湯</div>
+        <div class="actions">
+          <a class="btn btn-map" target="_blank" href="https://www.google.com/maps/search/?api=1&query=신선설농탕+명동">🗺️ 地圖</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="DAY5/10.png" alt="武橋洞牛骨湯" onclick="openLightbox(this.src)">
+        <div><span class="pill pill-food">美食</span></div>
+        <div class="ttl">武橋洞牛骨湯明太魚湯 무교동북어국집</div>
+        <div class="meta">明洞 ・ 早餐推薦</div>
+        <div class="desc">圖中為清爽明太魚湯 + 牛骨湯，明洞最強解宿醉早餐</div>
+        <div class="actions">
+          <a class="btn btn-map" target="_blank" href="https://www.google.com/maps/search/?api=1&query=무교동북어국집">🗺️ 地圖</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="DAY5/11.png" alt="世光烤腸" onclick="openLightbox(this.src)">
+        <div><span class="pill pill-food">美食</span></div>
+        <div class="ttl">世光烤腸 세광양대창</div>
+        <div class="meta">明洞 ・ A 等級韓牛大腸</div>
+        <div class="desc">圖中為烤盤上的牛大腸 + 烤辣椒、洋蔥，搭燒酒最絕</div>
+        <div class="actions">
+          <a class="btn btn-map" target="_blank" href="https://www.google.com/maps/search/?api=1&query=세광양대창+명동">🗺️ 地圖</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="DAY5/14.png" alt="橋村炸雞" onclick="openLightbox(this.src)">
+        <div><span class="pill pill-food">美食</span></div>
+        <div class="ttl">橋村炸雞 教村치킨（明洞店）</div>
+        <div class="meta">明洞 ・ 韓國炸雞之王</div>
+        <div class="desc">圖中為招牌蜂蜜原味炸雞，明洞分店外帶超方便</div>
+        <div class="actions">
+          <a class="btn btn-map" target="_blank" href="https://www.google.com/maps/search/?api=1&query=교촌치킨+명동">🗺️ 地圖</a>
+          <a class="btn btn-web" target="_blank" href="https://kyochon.com/">🔗 官網</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="DAY5/15.png" alt="嫩豆腐鍋" onclick="openLightbox(this.src)">
+        <div><span class="pill pill-food">美食</span></div>
+        <div class="ttl">明洞嫩豆腐鍋 / 部隊鍋</div>
+        <div class="meta">明洞 ・ 韓食國民料理</div>
+        <div class="desc">圖中為韓式嫩豆腐鍋（순두부찌개），辣湯 + 嫩豆腐 + 海鮮，搭配白飯絕配</div>
+        <div class="actions">
+          <a class="btn btn-map" target="_blank" href="https://www.google.com/maps/search/?api=1&query=순두부찌개+명동">🗺️ 地圖</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="風川鰻魚 풍천장어 (明洞店).jpg" alt="風川鰻魚 明洞店" onclick="openLightbox(this.src)">
+        <div><span class="pill pill-food">美食</span></div>
+        <div class="ttl">風川鰻魚 풍천장어 (明洞店)</div>
+        <div class="meta">明洞</div>
+        <div class="desc">明洞地區另一家風川鰻魚分店，傳統烤鰻魚名店</div>
+        <div class="actions">
+          <a class="btn btn-map" target="_blank" href="https://www.google.com/maps/search/?api=1&query=풍천장어+명동">🗺️ 地圖</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="block">
+    <div class="block-head"><span class="tag tag-evening">傍晚</span><h3>明洞街邊小吃 ・ 邊走邊吃</h3></div>
+    <div class="grid grid-3">
+      <div class="card">
+        <img src="DAY5/12.png" alt="韓式熱狗" onclick="openLightbox(this.src)">
+        <div><span class="pill pill-food">街邊</span></div>
+        <div class="ttl">韓式熱狗 핫도그</div>
+        <div class="meta">明洞夜市必吃</div>
+        <div class="desc">圖中為招牌熱狗：起司、薯條、玉米裹粉炸過 + 蕃茄醬黃芥末</div>
+      </div>
+      <div class="card">
+        <img src="DAY5/13.png" alt="魚板串" onclick="openLightbox(this.src)">
+        <div><span class="pill pill-food">街邊</span></div>
+        <div class="ttl">魚板串 어묵꼬치</div>
+        <div class="meta">明洞夜市</div>
+        <div class="desc">圖中為招牌魚板串湯，2,000 韓元一支，湯免費喝到飽</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="block">
+    <div class="block-head"><span class="tag tag-evening">購物</span><h3>明洞商圈 ・ 最後採購</h3></div>
+    <div class="grid grid-3">
+      <div class="card">
+        <img src="Olive Young 明洞店.png" alt="Olive Young 明洞店" onclick="openLightbox(this.src)">
+        <div><span class="pill pill-shop">化妝品</span></div>
+        <div class="ttl">💄 Olive Young 明洞店</div>
+        <div class="meta">明洞站 ・ 旗艦店</div>
+        <div class="desc">面膜、洗面乳、精華液最後一波 ・ 退稅最方便</div>
+        <div class="actions"><a class="btn btn-map" target="_blank" href="https://www.google.com/maps/search/?api=1&query=Olive+Young+명동">🗺️ 地圖</a></div>
+      </div>
+      <div class="card">
+        <img src="樂天百貨明洞本店 新世界百貨.jpg" alt="樂天百貨明洞本店 / 新世界百貨" onclick="openLightbox(this.src)">
+        <div><span class="pill pill-shop">百貨</span></div>
+        <div class="ttl">🏬 樂天百貨明洞本店 / 新世界百貨</div>
+        <div class="meta">明洞 ・ 高級品牌</div>
+        <div class="desc">名牌包包、化妝品專櫃、地下美食街，退稅櫃台齊全</div>
+        <div class="actions"><a class="btn btn-map" target="_blank" href="https://www.google.com/maps/search/?api=1&query=롯데백화점+명동본점">🗺️ 地圖</a></div>
+      </div>
+      <div class="card">
+        <img src="樂天免稅店明洞本店.jpg" alt="樂天免稅店明洞本店" onclick="openLightbox(this.src)">
+        <div><span class="pill pill-shop">免稅店</span></div>
+        <div class="ttl">🛍️ 樂天免稅店明洞本店</div>
+        <div class="meta">明洞 ・ 樂天百貨 9~12F</div>
+        <div class="desc">護照記得帶！品牌貨退稅最划算，提早 3 小時前訂取貨</div>
+        <div class="actions"><a class="btn btn-map" target="_blank" href="https://www.google.com/maps/search/?api=1&query=롯데면세점+명동본점">🗺️ 地圖</a></div>
+      </div>
+      <div class="card">
+        <img src="樂天超市首爾站.jpg" alt="樂天超市首爾站" onclick="openLightbox(this.src)">
+        <div><span class="pill pill-shop">伴手禮</span></div>
+        <div class="ttl">🛒 樂天超市首爾站</div>
+        <div class="meta">首爾站 ・ 機場前最後</div>
+        <div class="desc">伴手禮一級戰區：辛拉麵、海苔、餅乾、燒酒，比明洞便宜</div>
+        <div class="actions"><a class="btn btn-map" target="_blank" href="https://www.google.com/maps/search/?api=1&query=롯데마트+서울역점">🗺️ 地圖</a></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="alert alert-info">
+    <span>🚖</span>
+    <div><b>明洞 → 仁川機場交通</b><br>
+    1️⃣ <b>機場巴士 6015</b>（明洞附近上車，約 75 分鐘 17,000 韓元）<br>
+    2️⃣ <b>地鐵 4 號線 → 首爾站 → AREX</b>（約 70 分鐘 9,500 韓元，末班 22:42）<br>
+    3️⃣ <b>計程車</b>（深夜推薦，約 70,000~85,000 韓元）<br>
+    💡 7/17 晚上 22:00 之前出發最安心</div>
+  </div>
+</section>
+
+<section id="anime">
+  <h2 class="section-title"><span class="emoji">🎌</span>動漫購物延伸推薦</h2>
+  <p class="section-sub">不在主行程內，但若有空檔可順道</p>
+
+  <div class="grid grid-3">
+    <div class="card">
+        <img src="龍山電子商街  I'PARK Mall.jpg" alt="龍山電子商街 I'PARK Mall" onclick="openLightbox(this.src)">
+      <div><span class="pill pill-anime">電子/模型</span></div>
+      <div class="ttl">📱 龍山電子商街 / I'PARK Mall</div>
+      <div class="meta">龍山站直通</div>
+      <div class="desc">韓國秋葉原！3C 電子、模型、扭蛋、海賊王 / 鬼滅 / 咒術迴戰公仔 ・ I'PARK Mall 有超多動漫店</div>
+      <div class="actions">
+        <a class="btn btn-map" target="_blank" href="https://www.google.com/maps/search/?api=1&query=용산+아이파크몰">🗺️ 地圖</a>
+        <a class="btn btn-web" target="_blank" href="https://www.hdc-iparkmall.com/main/index.do">🔗 官網</a>
+      </div>
+    </div>
+    <div class="card">
+        <img src="永登浦 Times Square.jpg" alt="永登浦 Times Square" onclick="openLightbox(this.src)">
+      <div><span class="pill pill-anime">大型商場</span></div>
+      <div class="ttl">🎮 永登浦 Times Square</div>
+      <div class="meta">永登浦站 ・ 地鐵 1 號線</div>
+      <div class="desc">超大商場 + 韓國最大「教保文庫」書店有大量漫畫 + 玩具反斗城、扭蛋區</div>
+      <div class="actions">
+        <a class="btn btn-map" target="_blank" href="https://www.google.com/maps/search/?api=1&query=타임스퀘어+영등포">🗺️ 地圖</a>
+        <a class="btn btn-web" target="_blank" href="https://www.timessquare.co.kr/en/web/gate">🔗 官網</a>
+      </div>
+    </div>
+    <div class="card">
+        <img src="ARTBOX 其他分店.jpg" alt="ARTBOX 其他分店" onclick="openLightbox(this.src)">
+      <div><span class="pill pill-anime">文具雜貨</span></div>
+      <div class="ttl">🎲 ARTBOX（其他分店）</div>
+      <div class="meta">明洞、東大門也有</div>
+      <div class="desc">韓國版「文具大創」可愛週邊、KAKAO 聯名商品、卡通文具</div>
+      <div class="actions">
+        <a class="btn btn-map" target="_blank" href="https://www.google.com/maps/search/?api=1&query=아트박스+명동">🗺️ 地圖（明洞店）</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="subway">
+  <h2 class="section-title"><span class="emoji">🚇</span>首爾地鐵圖</h2>
+  <p class="section-sub">點擊圖片可放大平移查看</p>
+  <div class="map-thumb" onclick="openMap('DAY1 2 3 4 5.png','首爾地鐵景點地圖')">
+    <img src="DAY1 2 3 4 5.png" alt="首爾地鐵圖">
+  </div>
+
+  <div class="alert alert-info">
+    <span>💳</span>
+    <div><b>T-money 卡是必備！</b>地鐵、公車、便利商店都可用。<br>
+    主要路線：<b>2 號線</b>（綠線，乙支路入口/弘大入口/聖水/建大入口）｜<b>3 號線</b>（橘線，景福宮/安國/鐘路 3 街）｜<b>4 號線</b>（藍線，明洞/東大門）｜<b>機場快線 AREX</b>（藍灰色）</div>
+  </div>
+</section>
+
+<footer style="text-align:center;padding:30px 16px;color:var(--muted);border-top:1px solid var(--border)">
+  <p>🌸 祝旅途愉快 한국 여행 즐거운 시간 보내세요 🌸</p>
+  <p style="margin-top:8px;font-size:12px">2026/07/14 (二) ～ 07/18 (六) ・ 5D4N ・ Hotel Midcity Myeongdong</p>
+</footer>
+
+<button class="fab" id="fab" onclick="window.scrollTo({top:0,behavior:'smooth'})">⬆️</button>
+
+<div class="viewer" id="viewer">
+  <div class="viewer-title" id="viewerTitle"></div>
+  <button class="viewer-close" onclick="closeMap()" aria-label="關閉">✕</button>
+  <div class="viewer-inner" id="viewerInner">
+    <img class="viewer-img" id="viewerImg" alt="">
+  </div>
+  <div class="viewer-hint" id="viewerHint">📱 雙指縮放 ・ 雙擊放大 ・ 拖曳移動</div>
+  <div class="viewer-tools">
+    <button onclick="vZoom(0.7)" aria-label="縮小">－</button>
+    <button onclick="vReset()" aria-label="重置">↺</button>
+    <button onclick="vZoom(1.4)" aria-label="放大">＋</button>
+  </div>
+</div>
+
+<div class="lightbox" id="lightbox" onclick="closeLightbox()">
+  <button class="lightbox-close">✕</button>
+  <img id="lbImg" src="" alt="">
+</div>
+
+<script>
+function toggleTheme(){
+  const b = document.body;
+  const cur = b.getAttribute('data-theme');
+  const nx = cur === 'dark' ? 'light' : 'dark';
+  b.setAttribute('data-theme', nx);
+  document.getElementById('themeBtn').textContent = nx === 'dark' ? '🌙' : '☀️';
+  localStorage.setItem('seoul-theme', nx);
+}
+const savedTheme = localStorage.getItem('seoul-theme');
+if(savedTheme){
+  document.body.setAttribute('data-theme', savedTheme);
+  document.getElementById('themeBtn').textContent = savedTheme === 'dark' ? '🌙' : '☀️';
+}
+
+function tick(){
+  const target = new Date('2026-07-14T20:00:00+08:00');
+  const now = new Date();
+  let diff = Math.max(0, target - now);
+  const d = Math.floor(diff / 86400000); diff %= 86400000;
+  const h = Math.floor(diff / 3600000); diff %= 3600000;
+  const m = Math.floor(diff / 60000); diff %= 60000;
+  const s = Math.floor(diff / 1000);
+  document.getElementById('cd-d').textContent = d;
+  document.getElementById('cd-h').textContent = String(h).padStart(2,'0');
+  document.getElementById('cd-m').textContent = String(m).padStart(2,'0');
+  document.getElementById('cd-s').textContent = String(s).padStart(2,'0');
+}
+tick(); setInterval(tick, 1000);
+
+let vState = { scale: 1, tx: 0, ty: 0, baseScale: 1 };
+let vEl, vImg, vInner;
+function openMap(src, title){
+  vEl = document.getElementById('viewer');
+  vImg = document.getElementById('viewerImg');
+  vInner = document.getElementById('viewerInner');
+  document.getElementById('viewerTitle').textContent = title || '';
+  vImg.src = src;
+  vEl.classList.add('open');
+  document.body.style.overflow = 'hidden';
+  const hint = document.getElementById('viewerHint');
+  hint.style.animation = 'none'; void hint.offsetWidth; hint.style.animation = '';
+  vImg.onload = () => {
+    const w = vImg.naturalWidth, h = vImg.naturalHeight;
+    const cw = vInner.clientWidth, ch = vInner.clientHeight;
+    vState.baseScale = Math.min(cw / w, ch / h) * 0.95;
+    vState.scale = vState.baseScale;
+    vState.tx = -w / 2;
+    vState.ty = -h / 2;
+    applyV();
+  };
+}
+function applyV(){
+  vImg.style.transform = `translate(${vState.tx}px,${vState.ty}px) scale(${vState.scale})`;
+}
+function closeMap(){
+  document.getElementById('viewer').classList.remove('open');
+  document.body.style.overflow = '';
+}
+function vZoom(factor){
+  vState.scale = Math.max(vState.baseScale * 0.5, Math.min(vState.baseScale * 8, vState.scale * factor));
+  applyV();
+}
+function vReset(){
+  const w = vImg.naturalWidth, h = vImg.naturalHeight;
+  vState.scale = vState.baseScale;
+  vState.tx = -w / 2;
+  vState.ty = -h / 2;
+  applyV();
+}
+
+let isDown = false, sx = 0, sy = 0, stx = 0, sty = 0;
+document.addEventListener('mousedown', (e) => {
+  if(!document.getElementById('viewer').classList.contains('open')) return;
+  if(!vInner.contains(e.target)) return;
+  isDown = true; vInner.classList.add('grabbing');
+  sx = e.clientX; sy = e.clientY; stx = vState.tx; sty = vState.ty;
+});
+document.addEventListener('mousemove', (e) => {
+  if(!isDown) return;
+  vState.tx = stx + (e.clientX - sx) / vState.scale;
+  vState.ty = sty + (e.clientY - sy) / vState.scale;
+  applyV();
+});
+document.addEventListener('mouseup', () => { isDown = false; if(vInner) vInner.classList.remove('grabbing'); });
+
+document.addEventListener('wheel', (e) => {
+  if(!document.getElementById('viewer').classList.contains('open')) return;
+  if(!vInner.contains(e.target)) return;
+  e.preventDefault();
+  vZoom(e.deltaY < 0 ? 1.15 : 0.87);
+}, { passive: false });
+
+let tStart = null, tDist = 0, tBaseScale = 1;
+document.addEventListener('touchstart', (e) => {
+  if(!document.getElementById('viewer').classList.contains('open')) return;
+  if(!vInner.contains(e.target)) return;
+  if(e.touches.length === 1){
+    tStart = { x: e.touches[0].clientX, y: e.touches[0].clientY, tx: vState.tx, ty: vState.ty };
+  } else if(e.touches.length === 2){
+    const dx = e.touches[0].clientX - e.touches[1].clientX;
+    const dy = e.touches[0].clientY - e.touches[1].clientY;
+    tDist = Math.hypot(dx, dy);
+    tBaseScale = vState.scale;
+  }
+}, { passive: false });
+document.addEventListener('touchmove', (e) => {
+  if(!document.getElementById('viewer').classList.contains('open')) return;
+  if(!vInner.contains(e.target)) return;
+  e.preventDefault();
+  if(e.touches.length === 1 && tStart){
+    vState.tx = tStart.tx + (e.touches[0].clientX - tStart.x) / vState.scale;
+    vState.ty = tStart.ty + (e.touches[0].clientY - tStart.y) / vState.scale;
+    applyV();
+  } else if(e.touches.length === 2){
+    const dx = e.touches[0].clientX - e.touches[1].clientX;
+    const dy = e.touches[0].clientY - e.touches[1].clientY;
+    const nd = Math.hypot(dx, dy);
+    vState.scale = Math.max(vState.baseScale * 0.5, Math.min(vState.baseScale * 8, tBaseScale * (nd / tDist)));
+    applyV();
+  }
+}, { passive: false });
+document.addEventListener('touchend', () => { tStart = null; });
+
+let lastTap = 0;
+document.addEventListener('touchend', (e) => {
+  if(!document.getElementById('viewer').classList.contains('open')) return;
+  if(!vInner.contains(e.target)) return;
+  const now = Date.now();
+  if(now - lastTap < 300 && now - lastTap > 0){
+    e.preventDefault();
+    if(vState.scale > vState.baseScale * 1.5){ vReset(); }
+    else { vZoom(2.5); }
+  }
+  lastTap = now;
+}, { passive: false });
+
+function openLightbox(src){
+  document.getElementById('lbImg').src = src;
+  document.getElementById('lightbox').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+function closeLightbox(){
+  document.getElementById('lightbox').classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+document.addEventListener('keydown', (e) => {
+  if(e.key === 'Escape'){ closeMap(); closeLightbox(); }
+});
+
+const fab = document.getElementById('fab');
+window.addEventListener('scroll', () => {
+  fab.classList.toggle('show', window.scrollY > 400);
+  const sections = document.querySelectorAll('section, header');
+  let cur = '';
+  sections.forEach(sec => {
+    if(window.scrollY + 100 >= sec.offsetTop) cur = sec.id || '';
+  });
+  document.querySelectorAll('#nav a').forEach(a => {
+    a.classList.toggle('active', a.getAttribute('href') === '#' + cur);
+  });
+});
+</script>
+
+</body>
+</html>
